@@ -1,0 +1,15 @@
+rapid/
+├── index.html (entry point)
+├── class.html
+├── subject.html
+├── quiz.html
+├── result.html
+├── assets/
+│   ├── styles.css
+│   └── logo.png
+├── data/
+│   └── questions.json
+└── js/
+    ├── app.js
+    ├── quiz.js
+    └── timer.js

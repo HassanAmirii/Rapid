@@ -1,0 +1,10 @@
+.parent-subject-container {
+  display: grid;
+  grid-template: 200px 200px / 200px 200px;
+  gap: 20px;
+  justify-content: center;
+}
+
+.child-subject {
+  background-color: blueviolet;
+}

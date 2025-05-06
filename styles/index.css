@@ -1,0 +1,37 @@
+:root {
+  --cool-font: "Nunito Sans", sans-serif;
+  --font-size: 20px;
+  --width: 720px;
+  --background-color: #eb4034;
+  --sec-background-color: #232236;
+  --heading-color: #222;
+  --text-color: white;
+  --sec-text-color: #8d8d91;
+  --link-color: #a83432;
+  --visited-color: #8b6fcb;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 20px;
+}
+
+body {
+  font-family: var(--cool-font);
+  font-size: var(--font-size);
+  background-color: black;
+  color: rgb(196, 181, 181);
+  padding-top: 60px;
+  text-align: center;
+}

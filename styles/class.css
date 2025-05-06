@@ -1,0 +1,10 @@
+.parent-class-container {
+  display: grid;
+  grid-template: 200px 200px / 200px 200px;
+  gap: 20px;
+  justify-content: center;
+}
+
+.child-class {
+  background-color: blueviolet;
+}

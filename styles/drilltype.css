@@ -1,0 +1,12 @@
+.parent-drill-type-container {
+  display: grid;
+  grid-template: 200px 200px / 200px 200px;
+  gap: 20px;
+  justify-content: center;
+}
+
+.child-drill-type {
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: column;
+}
