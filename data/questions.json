@@ -1,0 +1,32 @@
+{
+  "grade 1": {
+    "Maths": [
+      {
+        "question": "What is 2 + 2?",
+        "options": ["2", "3", "4", "5"],
+        "answer": "4"
+      },
+      {
+        "question": "What is 5 - 3?",
+        "options": ["1", "2", "3", "4"],
+        "answer": "2"
+      }
+    ],
+    "English": [
+      {
+        "question": "Pick the noun in this sentence: 'The boy ran home.'",
+        "options": ["ran", "boy", "home", "The"],
+        "answer": "boy"
+      }
+    ]
+  },
+  "grade 2": {
+    "Maths": [
+      {
+        "question": "What is 10 ÷ 2?",
+        "options": ["2", "5", "4", "10"],
+        "answer": "5"
+      }
+    ]
+  }
+}

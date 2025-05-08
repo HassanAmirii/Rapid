@@ -50,8 +50,8 @@ document.getElementById("start").addEventListener("click", function () {
     app.innerHTML = `
     <p>you just picked <strong>${subjectSelected}</strong> awesome, kindly pick a time type to continue</p>
  <div id="parent-time">
-  <button class="time-child" data-time="20minutes">20minutes - quiz </button>
-  <button class="time-child" data-time="40minutes">40minutes - exam </button>
+  <button class="time-child" data-time="20minutes - quiz">20minutes - quiz </button>
+  <button class="time-child" data-time="40minutes - exam">40minutes - exam </button>
 </div> `;
   }
 
@@ -73,7 +73,20 @@ document.getElementById("start").addEventListener("click", function () {
     document
       .getElementById("beginSession")
       .addEventListener("click", function () {
-        alert("${timeSelected} begins...");
+        fetch("data/questions.json")
+          .then(function (response) {
+            if (!response.ok) {
+              throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+          })
+          .then(function (data) {
+            console.log(JSON.stringify(data));
+            // Here you would typically work with your 'data'
+          })
+          .catch(function (error) {
+            console.error("Failed to load JSON:", error);
+          });
       });
   }
 });
