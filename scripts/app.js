@@ -76,16 +76,16 @@ document.getElementById("start").addEventListener("click", function () {
         fetch("data/questions.json")
           .then(function (response) {
             if (!response.ok) {
-              throw new Error(`HTTP error! status: ${response.status}`);
+              throw error(`http error: ${response.status}`);
             }
             return response.json();
           })
           .then(function (data) {
-            console.log(JSON.stringify(data));
-            // Here you would typically work with your 'data'
+            console.log(data);
           })
+
           .catch(function (error) {
-            console.error("Failed to load JSON:", error);
+            console.error(error);
           });
       });
   }
