@@ -2,30 +2,100 @@
   "grade 1": {
     "Maths": [
       {
+        "id": "g1m1",
         "question": "What is 2 + 2?",
-        "options": ["2", "3", "4", "5"],
-        "answer": "4"
+        "options": ["1", "2", "3", "4"],
+        "answer": 3
       },
       {
-        "question": "What is 5 - 3?",
-        "options": ["1", "2", "3", "4"],
-        "answer": "2"
+        "id": "g1m2",
+        "question": "How many sides does a triangle have?",
+        "options": ["2", "3", "4", "5"],
+        "answer": 1
+      },
+      {
+        "id": "g1m3",
+        "question": "What number comes after 5?",
+        "options": ["4", "6", "7", "8"],
+        "answer": 1
       }
     ],
     "English": [
       {
-        "question": "Pick the noun in this sentence: 'The boy ran home.'",
-        "options": ["ran", "boy", "home", "The"],
-        "answer": "boy"
+        "id": "g1e1",
+        "question": "Which is a vowel?",
+        "options": ["B", "C", "A", "Z"],
+        "answer": 2
+      },
+      {
+        "id": "g1e2",
+        "question": "What is the opposite of 'big'?",
+        "options": ["Huge", "Large", "Tiny", "Tall"],
+        "answer": 2
       }
     ]
   },
   "grade 2": {
     "Maths": [
       {
-        "question": "What is 10 ÷ 2?",
-        "options": ["2", "5", "4", "10"],
-        "answer": "5"
+        "id": "g2m1",
+        "question": "What is 10 - 4?",
+        "options": ["5", "6", "7", "4"],
+        "answer": 1
+      },
+      {
+        "id": "g2m2",
+        "question": "What is 3 times 2?",
+        "options": ["5", "6", "3", "2"],
+        "answer": 1
+      }
+    ],
+    "English": [
+      {
+        "id": "g2e1",
+        "question": "Choose the noun in this sentence: 'The boy ran fast.'",
+        "options": ["ran", "fast", "boy", "the"],
+        "answer": 2
+      }
+    ]
+  },
+  "grade 3": {
+    "Science": [
+      {
+        "id": "g3s1",
+        "question": "What do plants need to grow?",
+        "options": ["Water", "Sunlight", "Soil", "All of the above"],
+        "answer": 3
+      },
+      {
+        "id": "g3s2",
+        "question": "What organ helps us breathe?",
+        "options": ["Heart", "Brain", "Lungs", "Legs"],
+        "answer": 2
+      }
+    ],
+    "Civic": [
+      {
+        "id": "g3c1",
+        "question": "What color is the Nigerian flag?",
+        "options": [
+          "Red and white",
+          "Green and white",
+          "Blue and white",
+          "Black and white"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "g3c2",
+        "question": "Who is a good citizen?",
+        "options": [
+          "Someone who steals",
+          "Someone who obeys laws",
+          "Someone who fights",
+          "Someone who litters"
+        ],
+        "answer": 1
       }
     ]
   }

@@ -76,12 +76,35 @@ document.getElementById("start").addEventListener("click", function () {
         fetch("data/questions.json")
           .then(function (response) {
             if (!response.ok) {
-              throw error(`http error: ${response.status}`);
+              throw new Error(`http error: ${response.status}`);
             }
             return response.json();
           })
           .then(function (data) {
-            console.log(data);
+            const questions = data[classSelected][subjectSelected];
+
+            let currentQuestion = 0;
+            let score = 0;
+            let questionList = questions[currentQuestion];
+
+            function renderQuestion() {
+              app.innerHTML = `
+                <h1>Question: ${currentQuestion + 1}</h1>
+                <p>${questionList.question}</p>
+                <div>
+                  ${questionList.options
+                    .map(function (item) {
+                      return `
+                        <button class="options" data-optchoice="${item}">
+                          ${item}
+                        </button>
+                      `;
+                    })
+                    .join("")}
+                </div>
+              `;
+            }
+            renderQuestion();
           })
 
           .catch(function (error) {
