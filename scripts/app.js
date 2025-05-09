@@ -104,7 +104,40 @@ document.getElementById("start").addEventListener("click", function () {
                 </div>
               `;
             }
+
             renderQuestion();
+            app.addEventListener("click", function handleAnswer(e) {
+              if (e.target.tagName == "BUTTON" && e.target.dataset.optchoice) {
+                const choosedAnswer = e.target.dataset.optchoice;
+                const rightAnswer = questionList.answer;
+                if (choosedAnswer == rightAnswer) {
+                  score++;
+                }
+                currentQuestion++;
+                if (currentQuestion < questions.length) {
+                  questionList = questions[currentQuestion];
+                  renderQuestion();
+                } else {
+                  app.removeEventListener("click", handleAnswer);
+                  showResult();
+                }
+              }
+              function showResult() {
+                app.innerHTML = ` <h1> done, your results:</h1>
+                <p>${score}/ ${questions.length}</p>
+                
+                
+                <button id="restartSession" onclick="location.reload()"> restart session </button>
+                <button id="PickAgain"> Reselect subject </button>
+
+                `;
+                document
+                  .getElementById("PickAgain")
+                  .addEventListener("click", function () {
+                    pickClass();
+                  });
+              }
+            });
           })
 
           .catch(function (error) {
